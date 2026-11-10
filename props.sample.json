@@ -1,0 +1,12 @@
+{
+  "titleText": "AI Video Generator",
+  "subtitleText": "Dibuat otomatis menggunakan Gemini & Antigravity",
+  "themeColor": "#06b6d4",
+  "features": [
+    "Format 9:16 Siap TikTok / Reels",
+    "Transisi Halus berbasis Spring Physics",
+    "Dukungan Dynamic Props JSON",
+    "Render Headless Super Cepat"
+  ]
+}
+
