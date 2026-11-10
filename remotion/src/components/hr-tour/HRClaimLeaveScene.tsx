@@ -190,3 +190,4 @@ export const HRClaimLeaveScene: React.FC = () => {
     </AbsoluteFill>
   );
 };
+

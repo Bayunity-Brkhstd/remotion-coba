@@ -108,3 +108,4 @@ export const HROutroScene: React.FC = () => {
     </AbsoluteFill>
   );
 };
+

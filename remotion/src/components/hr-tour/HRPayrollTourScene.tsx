@@ -172,3 +172,4 @@ export const HRPayrollTourScene: React.FC = () => {
     </AbsoluteFill>
   );
 };
+

@@ -311,3 +311,4 @@ export const HRDashboardLayout: React.FC<{
     </div>
   );
 };
+

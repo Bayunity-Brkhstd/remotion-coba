@@ -114,3 +114,4 @@ export const HRAnalyticsScene: React.FC = () => {
     </AbsoluteFill>
   );
 };
+

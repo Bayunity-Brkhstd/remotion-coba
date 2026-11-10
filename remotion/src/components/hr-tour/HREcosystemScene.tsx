@@ -90,3 +90,4 @@ export const HREcosystemScene: React.FC = () => {
     </AbsoluteFill>
   );
 };
+

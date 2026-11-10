@@ -56,3 +56,4 @@ export const HRDashboardOverviewScene: React.FC = () => {
     </AbsoluteFill>
   );
 };
+

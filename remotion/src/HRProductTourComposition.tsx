@@ -67,3 +67,4 @@ export const HRProductTourComposition: React.FC = () => {
     </AbsoluteFill>
   );
 };
+
