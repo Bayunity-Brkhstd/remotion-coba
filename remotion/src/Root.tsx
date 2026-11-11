@@ -3,7 +3,9 @@ import { Composition } from "remotion";
 import { MainComposition } from "./Composition";
 import { CinematicComposition } from "./CinematicComposition";
 import { HRProductTourComposition } from "./HRProductTourComposition";
+import { SolarSystemComposition } from "./solar-system/SolarSystemComposition";
 import { VideoProps, CinematicVideoProps } from "./types";
+import { SolarSystemProps } from "./solar-system/types";
 
 export const RemotionRoot: React.FC = () => {
   const defaultProps: VideoProps = {
@@ -81,6 +83,40 @@ export const RemotionRoot: React.FC = () => {
         fps={30}
         width={1920}
         height={1080}
+      />
+
+      {/* 30-second Solar System Orbital Motion (1 Full Year, 1920x1080 @ 30 FPS) */}
+      <Composition
+        id="SolarSystem"
+        component={SolarSystemComposition}
+        durationInFrames={900} // 30 detik pada 30 FPS
+        fps={30}
+        width={1920}
+        height={1080}
+        defaultProps={{
+          zoom: 1,
+          totalDays: 365.25,
+          startDateIso: "2025-01-01T00:00:00Z",
+          title: "Solar System Orbital Motion",
+          subtitle: "Full Year Planetary Motion Simulation (2025)",
+        }}
+      />
+
+      {/* 30-second Inner Planets Close-Up (3 Months, zoom 2.5) */}
+      <Composition
+        id="InnerPlanets"
+        component={SolarSystemComposition}
+        durationInFrames={900} // 30 detik pada 30 FPS
+        fps={30}
+        width={1920}
+        height={1080}
+        defaultProps={{
+          zoom: 2.5,
+          totalDays: 90,
+          startDateIso: "2025-01-01T00:00:00Z",
+          title: "Inner Planets Orbital Motion",
+          subtitle: "3-Month Close-Up Simulation · Mercury to Mars",
+        }}
       />
     </>
   );
